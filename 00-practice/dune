@@ -1,0 +1,7 @@
+;; -*- Scheme -*-
+
+(alias
+ (name DEFAULT) 
+ (deps 
+  (alias_rec 01-recurse/runtest)
+  )) 
