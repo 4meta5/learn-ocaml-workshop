@@ -1,7 +1,19 @@
-;; -*- Scheme -*-
+;; -*- scheme -*-
 
 (library
- (name factorial_1)
+ (name factorial)
  (libraries base stdio)
  (inline_tests)
- (preprocess (pps ppx_expect)))
+ (preprocess (pps ppx_jane)))
+
+(env
+  (dev
+    (flags (:standard
+            -w -20 
+            -w -27 
+            -w -32 
+            -w -34 
+            -w -37 
+            -w -39)))
+  (release 
+   (flags (:standard))))

@@ -3,5 +3,6 @@
 (alias
  (name DEFAULT) 
  (deps 
-  (alias_rec 01-recurse/runtest)
-  )) 
+  (alias_rec 01-factorial/runtest)
+  (alias_rec 02-somme/runtest)
+  ))
